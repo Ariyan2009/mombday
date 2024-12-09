@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Happy Birthday Mom</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
     <header>
         <h1>Happy Birthday, Mom!</h1>
     </header>
     <section>
-        <p class="intro">
-            Dear Mom,<br>
-     On this special day, I want to thank you for being the most incredible person in my life. Your love, strength, and unwavering support have shaped who I am today. You are not just my mother but my greatest inspiration and my safe haven. Every moment spent with you is a precious memory, and this little website is my way of celebrating the countless moments of joy, laughter, and love you’ve given me. Happy Birthday, Mom! May your day be filled with happiness, just like you fill our lives with your endless love. I love you more than words can express.
-        </p>
+     
+            
+        <audio id="background-audio" loop>
+            <source src="music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="hidden-message" style="display: none; margin-top: 20px;">
+            <p class="reveal-message">
+                Dear Mom!, <br> 
+                On this special day, I want to thank you for being the most incredible person in my life. Your love, strength, and unwavering support have shaped who I am today. You are not just my mother but my greatest inspiration and my safe haven. Every moment spent with you is a precious memory, and this little website is my way of celebrating the countless moments of joy, laughter, and love you’ve given me. Happy Birthday, Mom! May your day be filled with happiness, just like you fill our lives with your endless love. I love you more than words can express.
+            </p>
+        </div>
         <div class="gallery">
             <div class="photo-frame">
                 <img src="images/photo1.jpg" alt="Memory 1">
@@ -31,5 +35,6 @@
             <!-- Add more photo frames as needed -->
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
